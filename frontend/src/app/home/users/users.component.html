@@ -1,0 +1,13 @@
+<div class="main">
+  <div class="user"> Users </div>
+  <div>
+    <div *ngFor="let user of usersService.users | async" routerLink="/search/{{user.username}}" class="aUser cursor-pointer" style="outline: none">
+      <div class="aUserImageDiv">
+        <img src="../../../assets/image/profile.png" class="aUserImage" alt="">
+      </div>
+      <b>{{ user.username | uppercase }}</b>
+      <br>
+      <i>Status: <span style="color: Green">{{ user.status }}</span></i>
+    </div>
+  </div>
+</div>

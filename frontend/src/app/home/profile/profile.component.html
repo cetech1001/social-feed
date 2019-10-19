@@ -1,0 +1,19 @@
+<div class="user">{{ fullName }}</div>
+
+<div class="profilePicture">
+  <img src="../../../assets/image/profile.png" width="100%" height="100%" style="border-radius: 100%;">
+</div>
+
+<div class="userDetails">
+  <form>
+    <label>First Name:
+      <input placeholder="First Name" type="text" name="firstName" [(ngModel)]="user.firstName" readonly>
+    </label>
+    <label>Last Name:
+      <input placeholder="Last Name" type="text" name="lastName" [(ngModel)]="user.lastName" readonly>
+    </label>
+    <label>Username:
+      <input placeholder="Username" type="text" name="username" [(ngModel)]="user.username" readonly>
+    </label>
+  </form>
+</div>

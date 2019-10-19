@@ -1,0 +1,20 @@
+<div class="main">
+  <div class="left"></div>
+  <div class="right">
+    <div class="ha">
+      <form class="form-sign-in">
+        <h1>Create an account</h1>
+        <h4>It's quick and easy.</h4>
+        <br>
+        <input placeholder="First Name" type="text" autofocus maxlength="16" [(ngModel)]="user.firstName" name="firstName" autocomplete="off" required>
+        <input placeholder="Last Name" type="text" maxlength="16" [(ngModel)]="user.lastName" name="lastName" autocomplete="off" required>
+        <input placeholder="Username" type="text" maxlength="16" [(ngModel)]="user.username" name="username" autocomplete="off" required>
+        <input placeholder="Password" type="password" maxlength="30" [(ngModel)]="user.password" name="password" autocomplete="off" required>
+        <p></p>
+        <div class="button"><button mat-raised-button (click)="submit()" type="submit">Sign Up</button></div>
+      </form>
+      <section class="clear"></section>
+    </div>
+  </div>
+  <section class="clear"></section>
+</div>

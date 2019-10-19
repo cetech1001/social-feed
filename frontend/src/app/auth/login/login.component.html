@@ -1,0 +1,13 @@
+<div class="header">
+  <div class="alt-header">
+      <b>Pomar</b>
+      <div class="form-sign-in">
+        <form>
+          <input type="text" placeholder="Username" maxlength="16" name="username" [(ngModel)]="userLoginDetails.username" required>
+          <input type="password" placeholder="Password" maxlength="30" name="password" [(ngModel)]="userLoginDetails.password" required>
+          <button mat-raised-button (click)="submit()" type="submit">Login</button>
+        </form>
+      </div>
+    <section class="clear"></section>
+  </div>
+</div>

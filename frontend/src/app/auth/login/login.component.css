@@ -1,0 +1,74 @@
+.header{
+  height: auto;
+  width: 100%;
+  background-image: url("../../../assets/image/Image.jpg");
+  background-repeat: no-repeat;
+}
+.alt-header{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0,0,0);
+}
+.clear{
+  clear: both;
+}
+
+b{
+  font-size: 23px;
+  font-weight: bolder;
+  background-color: white; color: black;
+  float: left; padding: 10px; height: 39px;
+  text-align: center;
+  width: 100px;
+  line-height: 18px;
+  border-radius: 5px;
+  cursor: none;
+  margin: 16px 16px 16px 40px;
+}
+
+.form-sign-in{
+  float: right;
+  margin: 16px 40px 16px 16px;
+}
+
+input{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  height: 30px;
+  margin-right: 10px;
+  padding: 18px;
+  border-radius: 5px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+button{
+  padding-left: 35px;
+  font-weight: bold;
+  padding-right: 35px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+button:hover{
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,39 @@
+<div>
+  <section>
+    <div class="alert" style="max-width: 35rem;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <span>Welcome <b style="color: dodgerblue;">{{ fullName }}</b> what's happening.</span>
+    </div>
+    <div class="alert" style="max-width: 35rem;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <strong>Feel free to explore the app!</strong>
+    </div>
+
+    <div class="card border-dark mb-3 newPost" style="max-width: 35rem;">
+      <div class="card-header font-weight-bold" >Create Post</div>
+      <div class="card-body">
+        <form>
+          <textarea id="subject" name="description" [(ngModel)]="newPost" placeholder="Write something.." style="height:200px"></textarea>
+          <button mat-raised-button type="submit" class="newPostButton" (click)="createPost()">Post</button>
+        </form>
+      </div>
+    </div>
+
+    <div *ngFor="let post of posts" class="card border-dark mb-3 post" style="max-width: 35rem;">
+      <div class="card-header font-weight-bold">{{ post.user | fullName }}</div>
+      <div class="card-body">
+        <div class="postImage">
+          <img src="../../../assets/image/profile.png" width="100%" height="100%" style="border-radius: 100%;" alt="Profile Picture">
+        </div>
+        <h4 class="card-title">{{ post.user | uppercase }}</h4>
+        <p class="card-text">{{ post.body }}</p>
+      </div>
+      <div class="card-footer">
+        <div class="Like" (click)="likePost(post)">
+          <img src="../../../assets/image/like.png" alt="Like">
+        </div>
+        <div class="LikeCounter"> {{ post.likes }} <b>Likes</b> </div>
+      </div>
+    </div>
+  </section>
+</div>

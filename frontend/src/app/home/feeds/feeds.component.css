@@ -1,0 +1,136 @@
+
+section{
+  height: 600px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+div{
+  margin-bottom: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 grey;
+  border-radius: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /*background: black;*/
+  background-color: black;
+}
+
+.alert {
+  padding: 20px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 6px 6px -2px rgba(0,0,0,.3);
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.newPost{
+  box-shadow: 0 6px 6px -2px rgba(0,0,0,.3);
+}
+.newPostHeader{
+  border: 2px solid black;
+  height: 40px;
+  line-height: 40px;
+  width: 96.6%;
+  background-color: whitesmoke;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.newPostHeaderText{
+  margin-left: 20px;
+}
+textarea {
+  width: 97.2%;
+  max-height: 120px;
+  padding: 12px;
+  border: none;
+  box-sizing: border-box;
+  resize: none;
+  font-size: 17px;
+  margin-bottom: 0;
+  float: left;
+  margin-top: -20px;
+}
+.newPostButton {
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  margin-top: -5px;
+  width: 100%;
+  float: left;
+  box-shadow: 0 6px 6px -2px rgba(0,0,0,.3);
+  border: 2px solid dodgerblue;
+  font-weight: bold;
+}
+.border{
+  border: 1px solid black;
+}
+
+.ooblock{
+  border: none;
+  width: auto;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+
+.post{
+  height: auto;
+  border: 1px solid;
+  box-shadow: 0 6px 6px -2px rgba(0,0,0,.3);
+}
+
+.postImage{
+  height: 50px;
+  width: 50px;
+  border: 1px solid green;
+  border-radius: 100%;
+  margin-right: 10px;
+  float: left;
+}
+
+.Like{
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.LikeCounter{
+  float: left;
+}
+
+.Comment{
+  float: right;
+  cursor: pointer;
+}

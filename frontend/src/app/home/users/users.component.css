@@ -1,0 +1,36 @@
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.user{
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 6px 6px -2px rgba(0,0,0,.3);
+}
+
+.aUser{
+  padding: 10px 0 10px 10px;
+}
+.aUserImageDiv{
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  border: 1px solid black;
+  float: left;
+  margin-right: 20px;
+}
+.aUserImage{
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+b{font-size: 20px}
+

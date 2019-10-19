@@ -1,0 +1,20 @@
+<div class="nav mb-1">
+  <b class="cursor-pointer" routerLink="/home">Pomar</b>
+  <div>
+    <input type="text" name="search" autocomplete="off" placeholder="Search" [(ngModel)]="search" class="search">
+    <button mat-raised-button routerLink="/search/{{search}}">Search</button>
+  </div>
+  <div id="boom">
+    <button mat-raised-button type="submit" (click)="logout()">Logout</button>
+  </div>
+</div>
+
+<main class="container-fluid" style="min-height: 100%; position: absolute;">
+  <div class="row">
+    <app-profile class="col-4"></app-profile>
+    <pre class="col-4">
+      <router-outlet></router-outlet>
+    </pre>
+    <app-users class="col-4"></app-users>
+  </div>
+</main>
